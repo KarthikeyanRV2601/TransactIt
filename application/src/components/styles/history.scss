@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nuninto', sans-serif;
+}
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+body{
+    width: 100%;
+    height: 100vh;
+}
+#root{
+    width: 100%;
+    height: 100%;
+    @include flexColumn();
+    align-items: flex-start;
+    justify-content: flex-start;
+        .profileTab{
+            width: 100%;
+            height: 30%;
+            @include flexRow();
+            background: #595963;
+            justify-content: space-between;
+            padding: 2%;
+            .detailsWrap{
+                min-width: 20%;
+                @include flexRow();
+                gap: 20px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+                .details{
+                    width: 80%;
+                    height: 100%;
+                    @include flexColumn();
+                    align-items: flex-start;
+                    div{
+                        color: white;
+                    }
+                }
+            }
+            .settings{
+                width: 30px;
+                height: 30px;
+                transition: 0.1s;
+                cursor: pointer;
+                
+                &:hover{
+                    transform: rotate(10deg);
+                }
+            }   
+        }
+        h1{
+            font-family: 'Roboto';
+            color: #595963;
+            margin:5% 0 0 5%;
+        }
+        .gobackLink{
+            @include flexRow();
+            justify-content: flex-start;
+            gap: 10px;
+            margin:2% 0 0 5%;
+            color: #1F89C5;
+            text-decoration: none;
+        }
+        .transactionsList{
+            width: 100%;
+            @include flexColumn();
+            justify-content: flex-start;
+            padding: 100px 0 100px 0;
+            gap: 10px;
+            .transaction{
+                width: 80%;
+                min-height: 100px;
+                @include flexRow();
+                justify-content: space-between;
+                padding: 0 2% 0 2%;
+                box-shadow: 0 0 5px rgba(58, 58, 58, 0.2);
+                border-radius: 10px;
+                .tID,.amount{
+                    color: #686868;
+                }
+                .tID{
+                    width: 70%;
+                    text-align: left;
+                }
+                .view{
+                    color: #1F89C5;
+                    cursor: pointer;
+                }
+            }
+        }
+        .pages{
+            width: 100%;
+            height: 100px;
+            @include flexRow();
+            gap: 10px;
+            span{
+                width: 30px;
+                height: 30px;
+                background: #acacac;
+                color: white;
+                @include flexRow();
+                border-radius: 50%;
+                cursor: pointer;
+            }
+            .active{
+                background: #1F89C5;
+            }
+        }
+        .transactionDetails{
+            width:100%;
+            height:100%;
+            @include flexColumn;
+            position:fixed;
+            background: rgba(53, 53, 53, 0.548);
+            .wrap{
+                width:50%;
+                height:50%;
+                @include flexColumn();
+                align-items :flex-start;
+                background: white;
+                padding-left: 20px;
+                border-radius: 10px;
+                .field{
+                    width: 100%;
+                    height: 50px;
+                    @include flexRow();
+                    justify-content: flex-start;
+                    color: #595963;
+                    font-size: 14px;
+                    label{
+                        width: 20%;
+                        text-align: left;
+                        font-size: 18px;
+                    }
+                    
+                }
+                button{
+                    width: 100px;
+                    height: 40px;
+                    background: #1F89C5;
+                    margin-top: 30px;
+                    cursor: pointer;
+                    border: none;
+                    color: white;
+                    &:hover{
+                        background: #1375ad;
+                    }
+
+                }
+            }
+        }
+}

@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nuninto', sans-serif;
+}
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    @include flexColumn();
+    gap: 20px;
+    form{
+        background: white;
+        @include flexColumn();
+        align-items: flex-start;
+        gap: 20px;
+        h2{
+            color: #1F89C5;
+            font-size: 36px;
+            font-family: 'Roboto';
+        }
+        input{
+            width: 300px;
+            height: 40px;
+            padding-left: 10px;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            background: #1F89C5;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            &:hover{
+                background: #1a6c9c;
+            }
+        }
+
+    }
+    .signupLink{
+        width: 300px;
+        color: rgb(83, 83, 83);
+        text-align: left;
+        
+        a{
+            margin-left: 10px;
+            color: #1F89C5;
+        }
+    }
+}

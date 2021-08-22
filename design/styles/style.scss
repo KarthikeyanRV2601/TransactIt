@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nuninto', sans-serif;
+}
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+body{
+    widows: 100%;
+    height: 100vh;
+    .mainContainer{
+        width: 100%;
+        height: 100%;
+        .profileTab{
+            width: 100%;
+            height: 30%;
+            @include flexRow();
+            background: #595963;
+            justify-content: space-between;
+            padding: 2%;
+            .detailsWrap{
+                min-width: 20%;
+                @include flexRow();
+                gap: 20px;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: cover;
+                }
+                .details{
+                    width: 80%;
+                    height: 100%;
+                    @include flexColumn();
+                    align-items: flex-start;
+                    div{
+                        color: white;
+                    }
+                }
+            }
+            .settings{
+                width: 30px;
+                height: 30px;
+                transition: 0.1s;
+                cursor: pointer;
+                
+                &:hover{
+                    transform: rotate(10deg);
+                }
+            }   
+        }
+        .workspace{
+            widows: 100%;
+            height: 70%;
+            padding-left: 2%;
+            padding-top: 10%;
+            .buttons{
+                width: 100%;
+                height: 50px;
+                @include flexRow();
+                justify-content: flex-start;
+                gap: 20px;
+                
+                .btn{
+                    width: 200px;
+                    height: 50px;
+                    @include flexRow();
+                    gap: 10%;
+                    text-decoration: none;
+                    .text{
+                        color: white;
+                        
+                    }
+                    cursor: pointer;
+                    transition: 0.2s;
+                }
+                .sendbtn{
+                    background: #1F89C5;
+                    &:hover{
+                        gap: 20%;
+                    }
+                }
+                .historybtn{
+                    color: white;
+                    background: #88D07C;
+                    &:hover{
+                        svg{
+                            transition: 0.2s;
+                            transform: rotate(30deg);
+                        }
+                    }
+                }
+                
+            }
+        }
+        .popupScreen{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.329);
+            @include flexColumn();
+            display: none;
+            .container{
+                width: 60%;
+                height: 60%;
+                background: white;
+                @include flexColumn();
+                align-items: flex-start;   
+                gap: 20px;
+                padding-left: 5%;
+                border-radius: 10px;
+                h3{
+                    font-family: 'Roboto';
+                    color: #595963;
+                }
+                input{
+                    width: 80%;
+                    height: 50px;
+                    padding-left: 10px;
+                }
+                button{
+                    width: 120px;
+                    height: 40px;
+                    cursor: pointer;
+                    background: #1F89C5;
+                    color: white;
+                    border: none;
+                    border-radius: 10px;
+                    &:hover{
+                        background: #156da0;
+                    }
+                }
+                .cancel{
+                    background: #cc2b2b;
+                    &:hover{
+                        background: #ad1414;
+                    }
+                }
+
+            }
+        }
+    }
+    
+}

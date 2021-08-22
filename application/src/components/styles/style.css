@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'nuninto', sans-serif;
+}
+
+body {
+  widows: 100%;
+  height: 100vh;
+}
+
+body .mainContainer {
+  width: 100%;
+  height: 100%;
+}
+
+body .mainContainer .profileTab {
+  width: 100%;
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #595963;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2%;
+}
+
+body .mainContainer .profileTab .detailsWrap {
+  min-width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+body .mainContainer .profileTab .detailsWrap img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .mainContainer .profileTab .detailsWrap .details {
+  width: 80%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+body .mainContainer .profileTab .detailsWrap .details div {
+  color: white;
+}
+
+body .mainContainer .profileTab .settings {
+  width: 30px;
+  height: 30px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+body .mainContainer .profileTab .settings:hover {
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
+}
+
+body .mainContainer .workspace {
+  widows: 100%;
+  height: 70%;
+  padding-left: 2%;
+  padding-top: 10%;
+}
+
+body .mainContainer .workspace .buttons {
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+body .mainContainer .workspace .buttons .btn {
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 10%;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+body .mainContainer .workspace .buttons .btn .text {
+  color: white;
+}
+
+body .mainContainer .workspace .buttons .sendbtn {
+  background: #1F89C5;
+}
+
+body .mainContainer .workspace .buttons .sendbtn:hover {
+  gap: 20%;
+}
+
+body .mainContainer .workspace .buttons .historybtn {
+  color: white;
+  background: #88D07C;
+}
+
+body .mainContainer .workspace .buttons .historybtn:hover svg {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+body .mainContainer .popupScreen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.329);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .mainContainer .popupScreen .container {
+  width: 60%;
+  height: 60%;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  padding-left: 5%;
+  border-radius: 10px;
+}
+
+body .mainContainer .popupScreen .container h3 {
+  font-family: 'Roboto';
+  color: #595963;
+}
+
+body .mainContainer .popupScreen .container input {
+  width: 80%;
+  height: 50px;
+  padding-left: 10px;
+}
+
+body .mainContainer .popupScreen .container .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+body .mainContainer .popupScreen .container .buttons button {
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  background: #1F89C5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+body .mainContainer .popupScreen .container .buttons button:hover {
+  background: #156da0;
+}
+
+body .mainContainer .popupScreen .container .buttons .cancel {
+  background: #cc2b2b;
+}
+
+body .mainContainer .popupScreen .container .buttons .cancel:hover {
+  background: #ad1414;
+}
+/*# sourceMappingURL=style.css.map */
