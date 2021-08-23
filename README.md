@@ -1,16 +1,16 @@
 # TransactIt
-<h2>Objectives</h2>
+<h2>📌 Objectives</h2>
 A basic web application that features ethereum transfer between different crypto accounts<br/>
 Maintain transaction trail in firebase database<br/>
 Implement Smart contracts for the actual ethereum transfer process between accounts<br/>
 
-<h2>Project scope</h2><br/>
+<h2>📃 Project scope</h2><br/>
 Firebase email/password authentication<br/>
 Firebase data storage<br/>
 Smart contracts on ethereum<br/>
 Blockchain development<br/>
 
-<h2>Screenshots</h2>
+<h2>📸 Screenshots</h2>
 <p>
   Signin page
   <img src="https://github.com/KarthikeyanRV2601/TransactIt/raw/develop/design/screenshots/signin.jpg" style="object-fit:contain;"/>
